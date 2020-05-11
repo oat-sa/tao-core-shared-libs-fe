@@ -1,0 +1,33 @@
+{
+    "name": "@oat-sa/tao-core-shared-libs",
+    "version": "0.1.0",
+    "description": "TAO Frontent Core Shared Libraries",
+    "files": [
+        "dist",
+        "src",
+        "lib"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oat-sa/tao-core-shared-libs-fe.git"
+    },
+    "keywords": [
+        "tao",
+        "fe",
+        "library",
+        "core"
+    ],
+    "license": "GPL-2.0",
+    "bugs": {
+        "url": "https://github.com/oat-sa/tao-core-shared-libs-fe/issues"
+    },
+    "homepage": "https://github.com/oat-sa/tao-core-shared-libs-fe#readme",
+    "devDependencies": {},
+    "dependencies": {}
+}

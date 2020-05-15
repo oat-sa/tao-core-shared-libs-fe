@@ -3,8 +3,6 @@
     "version": "0.1.0",
     "description": "TAO Frontent Core Shared Libraries",
     "files": [
-        "dist",
-        "src",
         "lib"
     ],
     "publishConfig": {

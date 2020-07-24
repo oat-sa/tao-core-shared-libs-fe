@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f5de8d1-ae6f-4b44-9b8f-49ab20dcc302" name="Default Changelist" comment="" />
+    <list default="true" id="8f5de8d1-ae6f-4b44-9b8f-49ab20dcc302" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +25,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../docker-stack-cli" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SvnConfiguration">
@@ -43,7 +46,7 @@
       <workItem from="1595409462122" duration="2296000" />
       <workItem from="1595420333792" duration="1261000" />
       <workItem from="1595517690347" duration="597000" />
-      <workItem from="1595574758802" duration="1235000" />
+      <workItem from="1595574758802" duration="2508000" />
     </task>
     <servers />
   </component>
@@ -51,6 +54,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1241" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1595579548005">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="1241" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1595579548005" />
     <state x="340" y="170" width="964" height="660" key="find.popup" timestamp="1595418491332">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

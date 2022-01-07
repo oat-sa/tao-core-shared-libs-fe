@@ -1,6 +1,6 @@
 {
     "name": "@oat-sa/tao-core-shared-libs",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "TAO Frontent Core Shared Libraries",
     "files": [
         "lib"
@@ -25,7 +25,5 @@
     "bugs": {
         "url": "https://github.com/oat-sa/tao-core-shared-libs-fe/issues"
     },
-    "homepage": "https://github.com/oat-sa/tao-core-shared-libs-fe#readme",
-    "devDependencies": {},
-    "dependencies": {}
+    "homepage": "https://github.com/oat-sa/tao-core-shared-libs-fe#readme"
 }

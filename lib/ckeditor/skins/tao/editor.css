@@ -727,6 +727,7 @@ Usage:
     border-radius: 2px;
     border-radius: 1px;
     background: white;
+    display: flex;
 }
 
 .cke_hc .cke_toolgroup {
@@ -831,11 +832,15 @@ a.cke_button_disabled:active {
     vertical-align: middle;
     float: left;
     cursor: default;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .cke_button_label.cke_button__language_label {
     display: block;
+    cursor: pointer;
+}
+
+.cke_button__language {
+    cursor: pointer;
 }
 
 .cke_button__language_icon {
@@ -1008,12 +1013,12 @@ Special outer level classes used in this file:
      Transforms it into a block. */
     display: block;
     color: #222222;
-    padding: 3px 7px 4px;
+    padding: 5px 7px;
+    cursor: pointer;
 }
 
-.cke_menuitem span {
-    /* Avoid the text selection cursor inside menu items. */
-    cursor: default;
+.cke_menubutton .cke_menubutton_label {
+    cursor: pointer;
 }
 
 .cke_menubutton:hover,
@@ -1023,6 +1028,7 @@ Special outer level classes used in this file:
     color: #fff;
     display: block;
     outline: none;
+    cursor: pointer;
 }
 
 .cke_menubutton:hover:after,
@@ -1055,11 +1061,21 @@ Special outer level classes used in this file:
     border: #ada194 1px solid;
     border-radius: 2px;
     font-size: 10px;
-    top: 4px;
+    top: 6px;
     right: 5px;
     line-height: 12px;
     padding: 0 4px;
     position: absolute;
+}
+
+.cke_menubutton__language_ckb-ir span,
+.cke_menubutton__language_ar-arb span,
+.cke_menubutton__language_fa-af span,
+.cke_menubutton__language_fa-ir span,
+.cke_menubutton__language_he-il span,
+.cke_menubutton__language_ps-af span,
+.cke_menubutton__language_ur-in span {
+    cursor: pointer;
 }
 
 .cke_hc .cke_menubutton {

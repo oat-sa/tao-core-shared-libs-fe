@@ -383,6 +383,11 @@ Usage:
     border-radius: 3px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
     font-size: 14px;
+    visibility: hidden;
+}
+
+.cke_panel_visible {
+    visibility: visible;
 }
 
 /* This class represents panels which are used as context menus. */
@@ -1066,16 +1071,6 @@ Special outer level classes used in this file:
     line-height: 12px;
     padding: 0 4px;
     position: absolute;
-}
-
-.cke_menubutton__language_ckb-ir span,
-.cke_menubutton__language_ar-arb span,
-.cke_menubutton__language_fa-af span,
-.cke_menubutton__language_fa-ir span,
-.cke_menubutton__language_he-il span,
-.cke_menubutton__language_ps-af span,
-.cke_menubutton__language_ur-in span {
-    cursor: pointer;
 }
 
 .cke_hc .cke_menubutton {

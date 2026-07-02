@@ -1,6 +1,6 @@
 {
     "name": "@oat-sa/tao-core-shared-libs",
-    "version": "1.11.4",
+    "version": "1.12.0",
     "description": "TAO Frontent Core Shared Libraries",
     "files": [
         "lib"

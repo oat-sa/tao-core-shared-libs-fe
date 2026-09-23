@@ -1,1 +1,7 @@
 .idea
+
+# CKEditor build toolchain artifacts — never ship in npm package
+lib/ckeditor/package-lock.json
+lib/ckeditor/package.json
+lib/ckeditor/sonar-project.properties
+lib/ckeditor/node_modules/

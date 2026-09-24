@@ -20,6 +20,12 @@ if [[ ! -f "$RELEASE_DIR/ckeditor.js" ]]; then
 	exit 1
 fi
 
+release_size="$(wc -c <"$RELEASE_DIR/ckeditor.js" | tr -d ' ')"
+if [[ "$release_size" -lt 50000 ]]; then
+	echo "error: release ckeditor.js looks too small (${release_size} bytes) — not a real build" >&2
+	exit 1
+fi
+
 rsync -a --delete \
 	--exclude '.git' \
 	--exclude '.bender' \

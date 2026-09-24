@@ -59,21 +59,14 @@ The built versions checksums aren't identical because the source code contains t
 ### Update
 
 1. Build a minified release from [`oat-sa/ckeditor-dev`](https://github.com/oat-sa/ckeditor-dev) `develop` (see **Build** above). Do **not** use `./build.sh -t`.
-2. Copy the release into this repo with toolchain excludes:
+2. Sync the release into this repo (preferred — validates `ckeditor.js` size and excludes toolchain files):
 
 ```sh
-rsync -a --delete \
-  --exclude '.git' \
-  --exclude '.bender' \
-  --exclude 'node_modules' \
-  --exclude 'package.json' \
-  --exclude 'package-lock.json' \
-  --exclude 'sonar-project.properties' \
-  ckeditor-dev/dev/builder/release/ckeditor/ \
-  tao-core-shared-libs-fe/lib/ckeditor/
+export CKEDITOR_DEV=/path/to/ckeditor-dev
+./scripts/sync-ckeditor-release.sh
 ```
 
-Or run [`scripts/sync-ckeditor-release.sh`](../../scripts/sync-ckeditor-release.sh) from the repo root (set `CKEDITOR_DEV` first).
+Manual rsync is discouraged; if you must use it, reject releases where `ckeditor.js` is under 50 KB (same check as `link-to-tao.sh`) before running `rsync --delete`.
 
 3. Bump `@oat-sa/tao-core-shared-libs` in [`package.json`](../../package.json), publish, then bump `tao-core` for release tracking.
 

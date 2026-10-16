@@ -57,7 +57,20 @@ The built versions checksums aren't identical because the source code contains t
 - Once compiled, copy the css files from `tao-core-ui-fe/css/ckeditor/skins/tao/*` into the [`skins/tao/`](https://github.com/oat-sa/ckeditor-dev/tree/develop/skins/tao) folder of this repository. This will avoid accidental override of the skin when moving a new CK build into TAO.
 
 ### Update
-To keep CKEditor up-to-date folow the next [instruction](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+
+1. Build a minified release from [`oat-sa/ckeditor-dev`](https://github.com/oat-sa/ckeditor-dev) `develop` (see **Build** above). Do **not** use `./build.sh -t`.
+2. Sync the release into this repo (preferred — validates `ckeditor.js` size and excludes toolchain files):
+
+```sh
+export CKEDITOR_DEV=/path/to/ckeditor-dev
+./scripts/sync-ckeditor-release.sh
+```
+
+Manual rsync is discouraged; if you must use it, reject releases where `ckeditor.js` is under 50 KB (same check as `link-to-tao.sh`) before running `rsync --delete`.
+
+3. Bump `@oat-sa/tao-core-shared-libs` in [`package.json`](../../package.json), publish, then bump `tao-core` for release tracking.
+
+Never commit `lib/ckeditor/package-lock.json` — it mirrors ckeditor-dev devDependencies and triggers false Dependabot critical alerts (see RFE-2185).
 
 ## Development Code
 
